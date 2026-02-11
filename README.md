@@ -1,4 +1,4 @@
-# Guild of Physics' Voting Machine
+# KYS Voting Machine
 
 ## Setup
 
@@ -29,7 +29,7 @@ This project uses `@t3-oss/env-nextjs` for environment variable validation. All 
 
 - `BASE_URL`: Base URL of the application
   - Development: `http://localhost:3000`
-  - Production: `https://vaalit.fyysikkokilta.fi`
+  - Production: `https://vaalit.kysseura.fi`
 
 #### Authentication
 
@@ -41,7 +41,7 @@ This project uses `@t3-oss/env-nextjs` for environment variable validation. All 
 #### Email
 
 - `MAIL_FROM`: Email address for sending emails
-  - Example: `Vaalimasiina <vaalit@fyysikkokilta.fi>`
+  - Example: `Vaalimasiina <vaalit@kysseura.fi>`
 
 ### Optional Environment Variables
 
@@ -68,8 +68,8 @@ This project uses `@t3-oss/env-nextjs` for environment variable validation. All 
 #### Branding
 
 - `BRANDING_EMAIL_SUBJECT_PREFIX`: Email subject prefix (default: `Vaalimasiina`)
-- `BRANDING_MAIL_FOOTER_TEXT`: Email footer text (default: `Rakkaudella Fysistit`)
-- `BRANDING_MAIL_FOOTER_LINK`: Email footer link (default: `https://fyysikkokilta.fi`)
+- `BRANDING_MAIL_FOOTER_TEXT`: Email footer text (default: `Terveisin KYS`)
+- `BRANDING_MAIL_FOOTER_LINK`: Email footer link (default: `https://kysseura.fi`)
 
 #### Development & Debugging
 
@@ -83,8 +83,8 @@ These variables are exposed to the browser and can be customized for branding:
 
 - `NEXT_PUBLIC_BRANDING_HEADER_TITLE_TEXT`: Header title (default: `Vaalimasiina`)
 - `NEXT_PUBLIC_BRANDING_HEADER_TITLE_SHORT_TEXT`: Short header title (default: `Vaalimasiina`)
-- `NEXT_PUBLIC_BRANDING_FOOTER_HOME_TEXT`: Footer home text (default: `fyysikkokilta.fi`)
-- `NEXT_PUBLIC_BRANDING_FOOTER_HOME_LINK`: Footer home link (default: `https://fyysikkokilta.fi`)
+- `NEXT_PUBLIC_BRANDING_FOOTER_HOME_TEXT`: Footer home text (default: `kysseura.fi`)
+- `NEXT_PUBLIC_BRANDING_FOOTER_HOME_LINK`: Footer home link (default: `https://kysseura.fi`)
 
 ### Environment Validation
 
@@ -158,7 +158,7 @@ The voting process operates as follows:
 
 ### Result Calculation Overview
 
-The Voting Machine uses the STV algorithm combined with the Droop quota. The code for the algorithm is [here](https://github.com/fyysikkokilta/fk-vaalimasiina/blob/master/src/algorithm/stvAlgorithm.ts?plain=1).
+The Voting Machine uses the STV algorithm combined with the Droop quota. The code for the algorithm is [here](https://github.com/kysseura/kys-vaalimasiina/blob/master/src/algorithm/stvAlgorithm.ts?plain=1).
 
 The steps to calculate the result are as follows:
 
@@ -199,7 +199,7 @@ The steps to calculate the result are as follows:
   5.1. **Multiple candidates with fewest votes**
 
 - It is possible that multiple candidates have the minimum amount of votes in this case the candidate to be dropped is chosen by a draw.
-- The code for the randomization is [here](https://github.com/fyysikkokilta/fk-vaalimasiina/blob/master/src/algorithm/stvAlgorithm.ts?plain=1#L185-L201).
+- The code for the randomization is [here](https://github.com/kysseura/kys-vaalimasiina/blob/master/src/algorithm/stvAlgorithm.ts?plain=1#L185-L201).
 - In short the election id or UUID (Universal Unique Identifier) is used to seed a random number generator. Since the UUID is itself random, this ensures the result of the draw is random, but stays the same everytime the code is run. Using the random number generator the list of candidates with fewest votes is shuffled and the first in that list after shuffling is the candidate to be dropped.
 
 6. **Repeating the Process**
@@ -212,4 +212,4 @@ The steps to calculate the result are as follows:
 
 ## Database Schema
 
-![Database schema](https://github.com/fyysikkokilta/fk-vaalimasiina/blob/master/docs/images/database-schema.png?raw=true)
+![Database schema](https://github.com/kysseura/kys-vaalimasiina/blob/master/docs/images/database-schema.png?raw=true)

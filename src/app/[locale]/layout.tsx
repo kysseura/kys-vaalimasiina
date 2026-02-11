@@ -22,7 +22,7 @@ export async function generateMetadata() {
     metadataBase: new URL(env.NEXT_PUBLIC_BASE_URL),
     generator: 'Next.js',
     applicationName: t('title'),
-    creator: 'Fyysikkokilta ry'
+    creator: 'Kiltojen Ystävyysseura ry'
   }
 }
 

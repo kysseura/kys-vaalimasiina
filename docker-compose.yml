@@ -1,6 +1,6 @@
 services:
   app:
-    image: ghcr.io/fyysikkokilta/fk-vaalimasiina:latest
+    image: ghcr.io/kysseura/kys-vaalimasiina:latest
     restart: always
     extra_hosts:
       - 'host.docker.internal:host-gateway'

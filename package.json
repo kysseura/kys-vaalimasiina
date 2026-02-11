@@ -1,7 +1,7 @@
 {
-  "name": "fk-vaalimasiina",
+  "name": "kys-vaalimasiina",
   "version": "1.0.0",
-  "description": "Electronic voting system for the Guild of Physics",
+  "description": "Electronic voting system for Kiltojen Ystävyysseura",
   "license": "MIT",
   "type": "module",
   "scripts": {

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-FK Vaalimasiina is an electronic voting system for the Guild of Physics, built with Next.js 16, React 19, TypeScript, and PostgreSQL. It implements Single Transferable Vote (STV) with Droop quota for ranked-choice elections.
+KYS Vaalimasiina is an electronic voting system for Kiltojen Ystävyysseura, built with Next.js 16, React 19, TypeScript, and PostgreSQL. It implements Single Transferable Vote (STV) with Droop quota for ranked-choice elections.
 
 ## Commands
 

@@ -14,7 +14,7 @@ export default async function isAuthorized(jwt: string | undefined) {
 
     const { payload } = await jwtVerify(jwt, secret, {
       algorithms: ['HS256'],
-      issuer: 'fk-vaalimasiina'
+      issuer: 'kys-vaalimasiina'
     })
 
     if (!payload || typeof payload !== 'object' || !('user' in payload)) {

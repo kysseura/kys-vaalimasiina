@@ -10,11 +10,11 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
   SKIP_ENV_VALIDATION: true
-  NEXT_PUBLIC_BASE_URL: 'https://vaalit.fyysikkokilta.fi'
-  NEXT_PUBLIC_BRANDING_HEADER_TITLE_TEXT: 'FK Vaalimasiina'
-  NEXT_PUBLIC_BRANDING_HEADER_TITLE_SHORT_TEXT: 'FK Vaalit'
-  NEXT_PUBLIC_BRANDING_FOOTER_HOME_TEXT: 'fyysikkokilta.fi'
-  NEXT_PUBLIC_BRANDING_FOOTER_HOME_LINK: 'https://fyysikkokilta.fi'
+  NEXT_PUBLIC_BASE_URL: 'https://vaalit.kysseura.fi'
+  NEXT_PUBLIC_BRANDING_HEADER_TITLE_TEXT: 'KYS Vaalimasiina'
+  NEXT_PUBLIC_BRANDING_HEADER_TITLE_SHORT_TEXT: 'KYS Vaalit'
+  NEXT_PUBLIC_BRANDING_FOOTER_HOME_TEXT: 'kysseura.fi'
+  NEXT_PUBLIC_BRANDING_FOOTER_HOME_LINK: 'https://kysseura.fi'
   NODE_ENV: production
 
 jobs:
@@ -104,15 +104,15 @@ jobs:
       GOOGLE_CLIENT_ID: test-google-client-id
       GOOGLE_CLIENT_SECRET: test-google-client-secret
       ADMIN_EMAILS: test@email.com
-      MAIL_FROM: 'Vaalimasiina <vaalit@fyysikkokilta.fi>'
+      MAIL_FROM: 'Vaalimasiina <vaalit@kysseura.fi>'
       NEXT_PUBLIC_BASE_URL: http://localhost:3000
       NEXT_PUBLIC_BRANDING_HEADER_TITLE_TEXT: Vaalimasiina
       NEXT_PUBLIC_BRANDING_HEADER_TITLE_SHORT_TEXT: Vaalimasiina
-      NEXT_PUBLIC_BRANDING_FOOTER_HOME_TEXT: fyysikkokilta.fi
-      NEXT_PUBLIC_BRANDING_FOOTER_HOME_LINK: https://fyysikkokilta.fi
+      NEXT_PUBLIC_BRANDING_FOOTER_HOME_TEXT: kysseura.fi
+      NEXT_PUBLIC_BRANDING_FOOTER_HOME_LINK: https://kysseura.fi
       BRANDING_EMAIL_SUBJECT_PREFIX: Vaalimasiina
-      BRANDING_MAIL_FOOTER_TEXT: Rakkaudella Fysistit
-      BRANDING_MAIL_FOOTER_LINK: https://fyysikkokilta.fi
+      BRANDING_MAIL_FOOTER_TEXT: Terveisin KYS
+      BRANDING_MAIL_FOOTER_LINK: https://kysseura.fi
 
     steps:
       - name: Checkout repository

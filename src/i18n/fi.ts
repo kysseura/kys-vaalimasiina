@@ -214,7 +214,7 @@ const messages = {
   },
   metadata: {
     title: 'Vaalimasiina',
-    description: 'Fyysikkokillan sähköinen äänestysjärjestelmä',
+    description: 'KYSin sähköinen äänestysjärjestelmä',
     vote: {
       title: 'Äänestäminen',
       description: 'Äänestä vaaleissa'

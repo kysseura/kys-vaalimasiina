@@ -57,7 +57,7 @@ const EmailTemplate = ({
           Vaalimasiina
         </Heading>
         <Text style={{ fontStyle: 'italic' }}>In English below</Text>
-        <Text>Tervetuloa äänestämään Fyysikkokillan vaaleissa!</Text>
+        <Text>Tervetuloa äänestämään KYSin vaaleissa!</Text>
         <Text>
           <strong>Vaalin nimi:</strong> {election.title}
         </Text>
@@ -88,7 +88,7 @@ const EmailTemplate = ({
         </Button>
         <Hr />
         <Text style={{ fontStyle: 'italic' }}>Suomeksi yllä</Text>
-        <Text>Welcome to vote in the elections of the Guild of Physics!</Text>
+        <Text>Welcome to vote in the KYS elections!</Text>
         <Text>
           <strong>Election name:</strong> {election.title}
         </Text>

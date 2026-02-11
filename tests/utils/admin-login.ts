@@ -14,7 +14,7 @@ export const loginAdmin = async (page: Page) => {
   })
     .setProtectedHeader({ alg: 'HS256' })
     .setIssuedAt()
-    .setIssuer('fk-vaalimasiina')
+    .setIssuer('kys-vaalimasiina')
     .setExpirationTime('10h')
     .sign(new TextEncoder().encode(env.AUTH_SECRET))
 

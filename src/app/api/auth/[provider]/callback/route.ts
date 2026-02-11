@@ -87,7 +87,7 @@ export async function GET(
     const jwt = await new SignJWT({ user })
       .setProtectedHeader({ alg: 'HS256' })
       .setIssuedAt()
-      .setIssuer('fk-vaalimasiina')
+      .setIssuer('kys-vaalimasiina')
       .setExpirationTime('8h')
       .sign(new TextEncoder().encode(env.AUTH_SECRET))
 
